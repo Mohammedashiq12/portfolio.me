@@ -29,7 +29,7 @@ export const ContactSection = () => {
 
             {/* EMAIL */}
             <ContactCard
-              icon={<Mail />}
+              icon={<Mail size={20}/>}
               title="Email"
               value="ashiqsag@gmail.com"
               href="mailto:ashiqsag@gmail.com"
