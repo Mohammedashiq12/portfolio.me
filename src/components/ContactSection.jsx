@@ -29,7 +29,7 @@ export const ContactSection = () => {
 
             {/* EMAIL */}
             <ContactCard
-              icon={<Mail size={20}/>}
+              icon={<Mail size={20} />}
               title="Email"
               value="ashiqsag@gmail.com"
               href="mailto:ashiqsag@gmail.com"
@@ -37,7 +37,7 @@ export const ContactSection = () => {
 
             {/* LINKEDIN */}
             <ContactCard
-              icon={<Linkedin />}
+              icon={<Linkedin size={20} />}
               title="LinkedIn"
               value="Mohammed Ashiq"
               href="https://www.linkedin.com/in/mohammedashiq12/"
@@ -45,7 +45,7 @@ export const ContactSection = () => {
 
             {/* GITHUB */}
             <ContactCard
-              icon={<Github />}
+              icon={<Github size={20} />}
               title="GitHub"
               value="Mohammedashiq12"
               href="https://github.com/Mohammedashiq12"
@@ -55,8 +55,10 @@ export const ContactSection = () => {
           <a
             href="/resume.pdf"
             download
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full
-                       bg-primary text-primary-foreground font-medium"
+            className="
+              inline-flex items-center gap-2 px-6 py-3 rounded-full
+              bg-primary text-primary-foreground font-medium
+            "
           >
             <Download size={18} />
             Download Resume
@@ -83,12 +85,14 @@ const ContactCard = ({ icon, title, value, href }) => (
       hover:bg-secondary/40
     "
   >
-    {/* ACCENT */}
-    <span className="
-      absolute left-0 top-0 h-full w-1
-      rounded-l-xl
-      bg-primary
-    " />
+    {/* Accent */}
+    <span
+      className="
+        absolute left-0 top-0 h-full w-1
+        rounded-l-xl
+        bg-primary
+      "
+    />
 
     <div className="flex items-center gap-4">
       <div className="text-primary">{icon}</div>
@@ -100,6 +104,3 @@ const ContactCard = ({ icon, title, value, href }) => (
     </div>
   </a>
 );
-
-
-
