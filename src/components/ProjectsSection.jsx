@@ -18,7 +18,7 @@ const projects = [
       "Built as a learning project to strengthen JavaScript fundamentals, including DOM manipulation, event handling, and localStorage.",
     image: "/todo-app.png",
     tech: "HTML · CSS · JavaScript",
-    demoUrl: "#",
+    demoUrl: "http://todo-mohammedashiq.vercel.app/",
     githubUrl: "https://github.com/Mohammedashiq12/todo-app",
   },
   {
@@ -64,8 +64,8 @@ export const ProjectsSection = () => {
                 transition-all duration-300
                 hover:-translate-y-1
                 hover:shadow-xl
-                hover:border-primary/40
-              "
+                hover:border-primary/40"
+              
             >
               {/* IMAGE */}
               <div className="h-56 sm:h-64 overflow-hidden bg-secondary">
